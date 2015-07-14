@@ -1,4 +1,5 @@
 // -*- c-basic-offset: 2; indent-tabs-mode: nil -*-
+package pcpp.week02;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

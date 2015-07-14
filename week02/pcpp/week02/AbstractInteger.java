@@ -1,4 +1,5 @@
 // -*- c-basic-offset: 2; indent-tabs-mode: nil -*-
+package pcpp.week02;
 
 // Defines a class that holds an integer
 public interface AbstractInteger {

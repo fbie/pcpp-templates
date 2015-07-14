@@ -1,4 +1,5 @@
 // -*- c-basic-offset: 2; indent-tabs-mode: nil -*-
+package pcpp.week02;
 
 // An example implementation of a sequential factor counter.
 public class SequentialFactorCounter implements AbstractFactorCounter {
