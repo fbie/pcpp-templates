@@ -19,7 +19,7 @@ echo "WEEK=$WEEK" > $ROOT/Makefile && cat $TEMPLATE_DIR/Makefile >> $ROOT/Makefi
 
 # Copy test template and add package.
 cp $TEMPLATE_DIR/TestSubmission.java $PKG/TestSubmission.java
-sed -i -n -e s/THEWEEK/$WEEK/g $PKG/TestSubmission.java
+sed -i '' s/THEWEEK/$WEEK/g $PKG/TestSubmission.java
 
 # Copy the other stuff
 cp -R $TEMPLATE_DIR/lib $ROOT/lib
