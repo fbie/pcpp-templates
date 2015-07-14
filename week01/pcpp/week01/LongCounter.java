@@ -1,4 +1,5 @@
 // -*- c-basic-offset: 4; indent-tabs-mode: nil -*-
+package pcpp.week01;
 
 public class LongCounter {
   private long count = 0;

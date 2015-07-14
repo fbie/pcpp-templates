@@ -1,4 +1,5 @@
 // -*- c-basic-offset: 2; indent-tabs-mode: nil -*-
+package pcpp.week01;
 // For week 1
 // sestoft@itu.dk * 2014-08-20
 
