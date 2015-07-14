@@ -5,7 +5,7 @@ all:
 	javac -cp ./pcpp:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar $(FILES_ALL)
 
 clean:
-	rm -f *.class
+	rm -f pcpp/$(WEEK)/*.class
 	rm -f *.zip
 
 students:
