@@ -9,7 +9,10 @@ clean:
 	rm -f *.zip
 
 students:
-	zip -r pcpp-week$(WEEK).zip $(FILES_PUB)
+	zip -r pcpp-week$(WEEK).zip $(FILES_PUB) Makefile
 
 tas:
 	zip -r pcpp-week$(WEEK)-tas.zip $(FILES_ALL) Makefile test.sh lib/*.jar
+
+submission:
+	zip -r pcpp-week$(WEEK)-submission.zip $(FILES_ALL) Makefile answers*
