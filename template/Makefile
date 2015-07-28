@@ -6,6 +6,8 @@ all:
 
 clean:
 	rm -f pcpp/week$(WEEK)/*.class
+
+clean-zip:
 	rm -f *.zip
 
 students:
