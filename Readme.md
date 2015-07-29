@@ -2,7 +2,7 @@
 
 ## What you get as part of the assignment ##
 
-A ZIP-archive that contains example code, empty classes that you will need to implement and a PDF document with the assignment and further questions and explanations.
+The assignment is handed out as a ZIP-archive that contains example code, empty classes that you will have to implement and a PDF document with the assignment and further questions and explanations.
 
 Unzip the archive into any folder. You can use for instance Eclipse to import the files into a project and build and run from there.
 
@@ -24,7 +24,7 @@ The ```-cp``` flag declares Java's class path, which is where the Java runtime l
 
 Please hand in a ZIP-archive that contains only:
 
-* The Java source files, in the same directory structure you recieved originally.
+* The Java source files, in the same directory structure you received originally.
 * Your answers to the questions as a plain text file called ```answers.txt```. Using Markdown or similar is appreciated but no requirement. The file ending may differ (e.g. ```answers.md```, ```answers.org```), but it **must** begin with ```answers```.
 * The Makefile file.
 
@@ -40,7 +40,7 @@ Do **under no circumstances** hand in any of the following:
 * Eclipse workspace settings, project files etc.
 * PDF or Microsoft Word documents.
 
-Furthermore, **do not** change the packages of the provided source files. That is, do not move them into different folders and do not change the ```package``` declaration at the top of the files.
+Furthermore, **do not** change the packages of the provided source files. That is, do not move them into different folders (e.g. something horribly long like ```dk.itu.pcpp.group49.week02```) and do not change the ```package``` declaration at the top of the files. Furthermore, all files must still compile when using the Makefile.
 
 ## Why do you not use Ant/Maven/Gradle? ###
 
