@@ -79,7 +79,7 @@ or
 $ make submission
 ```
 
-Do **under no circumstances** hand in any of the following:
+**Under no circumstances** hand in any of the following:
 
 * Compiled binary files (*.class files)
 * Eclipse workspace settings, project files etc.
