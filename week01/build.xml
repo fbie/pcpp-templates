@@ -1,0 +1,49 @@
+<project name="PCPP Week 01" default="build" basedir=".">
+  <property name="week" value="01" />
+  <property name="src" location="${basedir}/src" />
+  <property name="bin" location="${basedir}/bin" />
+  <property name="lib" location="${basedir}/lib" />
+  <property name="archive" value="pcpp-week${week}" />
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${bin}"/>
+  </target>
+
+  <target name="build" depends="init">
+    <javac srcdir="${src}" destdir="${bin}" includeantruntime="false">
+      <classpath>
+	<pathelement path="${bin}" />
+	<pathelement path="${lib}/hamcrest-core-1.3.jar" />
+	<pathelement path="${lib}/junit-4.12.jar" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="clean">
+    <delete verbose="true">
+      <fileset dir="${bin}" />
+      <fileset dir="${basedir}" includes="${archive}*.zip" />
+    </delete>
+  </target>
+
+  <target name="submission">
+    <zip destfile="${archive}-submission.zip">
+      <fileset dir="${basedir}" includes="src/ answers*" />
+    </zip>
+  </target>
+
+  <target name="students">
+    <zip destfile="${archive}.zip">
+      <fileset dir="${basedir}" excludes="**/TestSubmission.java"  includes="src/ build.xml Makefile" />
+    </zip>
+  </target>
+
+  <target name="tas">
+    <zip destfile="${archive}-tas.zip">
+      <fileset dir="${basedir}" includes="src/ build.xml Makefile lib/*.jar test.sh" />
+    </zip>
+  </target>
+
+  <target name="archive" depends="students,tas" />
+</project>
